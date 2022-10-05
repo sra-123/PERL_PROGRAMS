@@ -1,0 +1,26 @@
+$num=<STDIN>;
+$fact=&factorial($num);
+print "$fact";
+sub factorial{
+    $num1=@_[0];
+    if($num1==0 || $num1==1){
+        $fact1=1;
+    }
+    else{
+        $x=1;
+        while($num1>1){
+            $x=$x*$num1;
+            $num1=$num1-1;
+        }
+        $fact1=$x;
+    }
+    return $fact1;
+    
+    
+    
+    
+}
+
+
+
+
